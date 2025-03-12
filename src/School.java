@@ -4,7 +4,6 @@ public class School {
     private int teachersCount = 0;
     private int studentsCount = 0;
 
-    private double totalMoneyEarned = 0;
     public School() {
         this.teachers = new Teacher[10];
         this.students = new Student[10];
@@ -19,11 +18,25 @@ public class School {
     }
 
     public void addTeacher(Teacher teacher) {
+        if (teachersCount >= teachers.length) {
+            Teacher[] temp = new Teacher[teachers.length * 2];
+            for (int i = 0; i < teachers.length; i++) {
+                temp[i] = teachers[i];
+            }
+            teachers = temp;
+        }
         teachers[teachersCount++] = teacher;
         teacher.setSchool(this);
     }
 
     public void addStudent(Student student) {
+        if (studentsCount >= students.length) {
+            Student[] temp = new Student[students.length * 2];
+            for (int i = 0; i < students.length; i++) {
+                temp[i] = students[i];
+            }
+            students = temp;
+        }
         students[studentsCount++] = student;
     }
 

@@ -12,6 +12,16 @@ public class Main {
         school.addTeacher(teacher1);
         school.addTeacher(teacher2);
         school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
+        school.addTeacher(teacher3);
 
         school.addStudent(student1);
         school.addStudent(student2);
